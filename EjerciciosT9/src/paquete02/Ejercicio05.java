@@ -21,18 +21,28 @@ public class Ejercicio05 {
         Antes de analizar el presente ejercicio,
         usted debe revisar y entender lo desarrollado
         en el archivo Ayuda01.java del paquete2
-        */
+         */
         Scanner entrada = new Scanner(System.in);
         String[] estudiantes = {"Kimberly", "Hogan",
             "Teresa", "Luis", "Mark", "Jennifer",
             "Alcides"};
-        String inicial;
-        char inicialLetra;
+        String inicial1;
+        String[] inicial = new String[estudiantes.length];
+        char iniciallet;
         boolean bandera = true;
         while (bandera) {
             System.out.println("Ingrese una letra");
-            inicial = entrada.nextLine();
-            
+            inicial1 = entrada.nextLine().toUpperCase();
+
+            for (int i = 0; i < estudiantes.length; i++) {
+                inicial[i] = estudiantes[i].substring(0, 1);
+            }
+            for (int i = 0; i < estudiantes.length; i++) {
+                if (inicial1.equals(inicial[i])) {
+                    bandera = false;
+                }
+            }
+
         }
 
     }
