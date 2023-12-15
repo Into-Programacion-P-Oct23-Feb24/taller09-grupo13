@@ -15,29 +15,29 @@ public class Ejercicio04 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // declaramos los arrelgos y variables 
+        // Declaramos los arrelgos y variables 
         double[] promedios = {10, 10, 9.1, 7, 6.1, 4, 8};
         String[] estudiantes = {"Kimberly Gonzalez", "Mark Hogan",
             "Teresa Martinez", "Julia Johnson", "Mark Cook", "Jennifer Manning",
             "Juan Vasquez"};
         String[] promediosCualitativos = new String[7];
         int f;
-        // iniciamos un ciclo for
+        // Iniciamos un ciclo for
         for (f = 0; f < 7; f++) {
-            // si promediio es igual o mayor a 0 y menor que 6 se entra en la condición
+            // Si promedio es igual o mayor a 0 y menor que 6 se entra en la condición
             if (promedios[f] >= 0 && promedios[f] <= 5.9) {
                 promediosCualitativos[f] = "Regular";
-                // si promediio es igual o mayor a 6 y menor que 9 se entra en la condición
-                } else if (promedios[f] >= 6 && promedios[f] <= 8.9) {
+                // Si promedio es igual o mayor a 6 y menor que 9 se entra en la condición
+            } else if (promedios[f] >= 6 && promedios[f] <= 8.9) {
                 promediosCualitativos[f] = "Bueno";
-                    // si promediio es igual a 9 y igual o menor que 10 se entra en la condición
-                    } else if (promedios[f] >= 9 && promedios[f] <= 10) {
-                      promediosCualitativos[f] = "Sobresaliente";
+                // Si promedio es mayor igual a 9 y igual o menor que 10 se entra en la condición
+            } else if (promedios[f] >= 9 && promedios[f] <= 10) {
+                promediosCualitativos[f] = "Sobresaliente";
             }
         }
-        // inciamos otro ciclo for
+        // Inciamos otro ciclo for
         for (f = 0; f < 7; f++) {
-            // imprimimos en pantalla el nombre del estudiante , el promedio, y el tipo de
+            // Imprimimos en pantalla el nombre del estudiante , el promedio, y el tipo de
             // promedio que es
             System.out.printf("%s promedio: %.2f promedio cualitativo %s\n",
                     estudiantes[f], promedios[f], promediosCualitativos[f]);

@@ -28,18 +28,17 @@ public class Ejercicio05 {
             "Alcides"};
         String inicial1;
         String[] inicial = new String[estudiantes.length];
-        char iniciallet;
         boolean bandera = true;
         while (bandera) {
             System.out.println("Ingrese una letra");
             inicial1 = entrada.nextLine().toUpperCase();
-            //se guardan las iniciales de los estudiantes 
+            // Se guardan las iniciales de los estudiantes 
             for (int i = 0; i < estudiantes.length; i++) {
                 inicial[i] = estudiantes[i].substring(0, 1);
             }
-            //Comparamos si la incial que ingreso el estudiante cumple
-            //sale del ciclo y la inicial ingreseda no cumple sigue pidiendo 
-            //que ingrese una inicial hasta que se cumpla y pueda salir del ciclo.
+            // Comparamos si la incial que ingreso el estudiante cumple
+            // sale del ciclo y la inicial ingreseda no cumple sigue pidiendo 
+            // que ingrese una inicial hasta que se cumpla y pueda salir del ciclo.
             for (int i = 0; i < estudiantes.length; i++) {
                 if (inicial1.equals(inicial[i])) {
                     bandera = false;

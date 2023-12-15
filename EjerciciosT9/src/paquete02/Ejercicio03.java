@@ -23,33 +23,33 @@ public class Ejercicio03 {
         int baja = 0;
         int mayor = 0;
         int f;
-        // creamos un ciclo for el cual nos permita salir del ciclo
-        for (f=0; f <13;f++){
-           // suma va a ir acumulando la suma de cada valor del arreglo
-           suma = suma + arreglo[f];
+        // Creamos un ciclo for el cual nos permita salir del ciclo
+        for (f = 0; f < 13; f++) {
+            // Suma va a ir acumulando la suma de cada valor del arreglo
+            suma = suma + arreglo[f];
         }
-        // sacamos el valor de la media
+        // Sacamos el valor de la media
         media = suma / media;
-        // creamos otro ciclo for
-        for (f=0; f <13;f++){
-            // evaluamos el valor de los elementos y si el valor de los
+        // Creamos otro ciclo for
+        for (f = 0; f < 13; f++) {
+            // Evaluamos el valor de los elementos y si el valor de los
             // elementos es menor que la media se entra en la condición
-            if (arreglo[f]<media){
-                // a baja se le suma 1
+            if (arreglo[f] < media) {
+                // A la variable con nombre baja se le suma 1
                 baja++;
-                   // si no se cumple la anterior condición se entra aquí
-                   }else{
-                        // a mayor se le suma 1
-                        mayor++;
+                // Si no se cumple la anterior condición se entra aquí
+            } else {
+                // A la variable con nombre mayor se le suma 1
+                mayor++;
+            }
+
         }
-       
-        }
-        // presentamos en pantalla los elementos mayores a la media
+        // Presentamos en pantalla el numero de elementos mayores a la media
         System.out.printf("El numero de elementos que estan arriba "
-                + "de la media son: %d\n",mayor);
-        // presentamos en pantalla los elementos menores de la media
+                + "de la media son: %d\n", mayor);
+        // Presentamos en pantalla el numero de elementos menores a la media
         System.out.printf("El numero de elementos que estan abajo "
-                + "de la media son: %d\n",baja);
+                + "de la media son: %d\n", baja);
     }
 
 }

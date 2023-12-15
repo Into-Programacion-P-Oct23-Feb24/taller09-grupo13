@@ -17,7 +17,7 @@ public class Ejercicio02 {
     public static void main(String[] args) {
         // TODO code application logic here
         int fuera_de_rango = 0;
-        int[] respuestas = {1, 10, 11, 12, 12, 13, 16, 17, 18, 8, 9, 10, 21, 
+        int[] respuestas = {1, 10, 11, 12, 12, 13, 16, 17, 18, 8, 9, 10, 21,
             -1, 100, 200, 2, 21, 22, 27};
         String[] rangos = {"1-5", "6-10", "11-15", "16-20"};
         int[] valoresRangos = new int[4]; // {0, 0, 0, 0, 0}
@@ -41,8 +41,8 @@ public class Ejercicio02 {
                             // condicion ingresan en este else y me da el 
                             // resultado de los valores que no ingresaron 
                             // en las condiciones anteriores
-                                fuera_de_rango++;
-                            
+                            fuera_de_rango++;
+
                         }
 
                     }
@@ -56,8 +56,8 @@ public class Ejercicio02 {
                     valoresRangos[i]);
         }
         // Imprimira en pantalla los valores fuera de rango
-         System.out.printf("Valores fuera de rango:  %s\n", 
-                    fuera_de_rango);
+        System.out.printf("Valores fuera de rango:  %s\n",
+                fuera_de_rango);
 
     }
 
