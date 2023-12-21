@@ -29,7 +29,7 @@ public class Ejercicio05 {
         String inicial1;
         String[] inicial = new String[estudiantes.length];
         boolean bandera = true;
-        while (bandera) {
+        while (bandera) { 
             System.out.println("Ingrese una letra");
             inicial1 = entrada.nextLine().toUpperCase();
             // Se guardan las iniciales de los estudiantes 
