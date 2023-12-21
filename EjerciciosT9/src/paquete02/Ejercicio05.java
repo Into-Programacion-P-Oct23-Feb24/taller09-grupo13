@@ -35,18 +35,16 @@ public class Ejercicio05 {
             // Se guardan las iniciales de los estudiantes 
             for (int i = 0; i < estudiantes.length; i++) {
                 inicial[i] = estudiantes[i].substring(0, 1);
-            }
-            // Comparamos si la incial que ingreso el estudiante cumple
-            // sale del ciclo y la inicial ingreseda no cumple sigue pidiendo 
-            // que ingrese una inicial hasta que se cumpla y pueda salir del ciclo.
-            for (int i = 0; i < estudiantes.length; i++) {
+
+                // Comparamos si la incial que ingreso el estudiante cumple
+                // sale del ciclo y la inicial ingreseda no cumple sigue pidiendo 
+                // que ingrese una inicial hasta que se cumpla y pueda salir del ciclo.
                 if (inicial1.equals(inicial[i])) {
                     bandera = false;
                 }
+
             }
 
         }
-
     }
-
 }
